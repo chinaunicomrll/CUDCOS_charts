@@ -11,20 +11,13 @@ Helm使用Chart来管理Kubernetes manifest文件。每个chart都至少包括
 ```Bash
 tree -L 2
 .
-├── Chart.yaml
+├── Chart.yaml            用于描述MySQL chart
 ├── charts
 ├── templates
 │   ├── NOTES.txt
 │   ├── _helpers.tpl
-│   ├── configmap.yaml
-│   ├── services.yaml
-│   └── statefulset.yaml
+│   ├── configmap.yaml    用于生成MySQL配置文件
+│   ├── services.yaml     用来配置MySQL服务
+│   └── statefulset.yaml  用来定义MySQL StatefulSet
 └── values.yaml
 ```
-Chart.yaml用于描述MySQL chart
-
-templates/configmap.yaml用于生成MySQL配置文件
-
-templates/services.yaml用来配置MySQL服务
-
-templates/statefulset.yaml用来定义MySQL StatefulSet
