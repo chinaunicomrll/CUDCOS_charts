@@ -1,5 +1,7 @@
 # CUDCOS_charts
-Helm使用Chart来管理Kubernetes manifest文件。每个chart都至少包括
+CU-DC/OS使用Helm工具操作镜像
+
+Helm工具使用Chart来管理Kubernetes manifest文件。每个chart都至少包括
 
 应用的基本信息Chart.yaml;
 
